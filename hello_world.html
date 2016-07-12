@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ALWAYS!Hello World!</title>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+body{background:black;}
+article{width:1200px;margin:10% auto 0;}
+article p{color:white;font-family:"Montserrat";}
+.cloud {
+	width: 360px;
+	height: 120px;
+	background-color: #f2f2f2;
+	border: 5px solid #e69163;
+	border-top: none;
+	border-radius: 60px;
+	position: relative;
+	margin: 200px auto 0;
+}
+.cloud::before, .cloud::after {
+	content: '';
+	position: absolute;
+	background-color: #f2f2f2;
+	border: 3px solid #ccc;
+	border-radius: 50%;
+	z-index: -1;
+}
+.cloud::after {
+	top: -50px;
+	left: 50px;
+	width: 50px;
+	height: 120px;
+	border: none;
+	border-left: 3px solid #f60;
+}
+.cloud::before {
+	top: -50px;
+	right: 50px;
+	width: 50px;
+	height: 120px;
+}
+.face{position:relative;z-index:3}
+.eyeL{position:absolute;top:20px;left:130px;width:20px;height:50px;background:#ffb7b7;border-radius:30px;}
+.eyeR{position:absolute;top:20px;right:130px;width:20px;height:50px;background:#ffb7b7;border-radius:30px;}
+.nose{position:absolute;top:90px;left:165px;z-index:2;}
+.nose::before{position:absolute;top:-70px;content: '';border-radius:150px;width:30px;height:60px;border-bottom:20px solid #fe4646;}
+.mouth{position:absolute;top:90px;left:165px;z-index:1;}
+.mouth::before,.mouth::after{position:absolute;top:-50px;content: '';border-radius:150px;width:30px;height:60px;border-bottom:5px solid #ff7676;}
+.mouth::before{left:-13px;}
+.mouth::after{right:-43px;}
+@media (max-width: 1200px){
+	article{width:100%;box-sizing:border-box;padding:0 1%;}
+}
+</style>
+</head>
+
+<body>
+<article>
+    <p>I remembered that someone talk to me - Can you write the "Hello World!"? I said "what's the "Hello World!"?" He just laughed.</p>
+    <p>1.6 years ago ... I still remenber the thing,and than I always say "Hello World!" "Hello my friend! How are you?"</p>
+    <p>Thanks God~!well...my English is so poor! Ha Ha :DDD</p>
+    <div class="cloud">
+    	<div class="face">
+            <span class="eyeL"></span>
+            <span class="eyeR"></span>
+        </div>
+        <div class="nose"></div>
+        <div class="mouth"></div>
+    </div>
+</article>
+</body>
+</html>
